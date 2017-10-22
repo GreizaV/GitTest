@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751E7F4A1F9CE80A0086AA5F /* GTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E7F491F9CE80A0086AA5F /* GTBaseViewController.m */; };
 		90D9DAE54199286625CE3828 /* libPods-GitTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F19B9466C589569318F04AF /* libPods-GitTestUITests.a */; };
 		B47835921F1387740001D66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835911F1387740001D66D /* main.m */; };
 		B47835951F1387740001D66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835941F1387740001D66D /* AppDelegate.m */; };
@@ -40,6 +41,9 @@
 /* Begin PBXFileReference section */
 		56599444AD9ECF7A00CB30D3 /* Pods-GitTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitTestTests/Pods-GitTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6338C177148C04E37EE76890 /* Pods-GitTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitTestUITests/Pods-GitTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		751E7F481F9CE80A0086AA5F /* GTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTBaseViewController.h; sourceTree = "<group>"; };
+		751E7F491F9CE80A0086AA5F /* GTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTBaseViewController.m; sourceTree = "<group>"; };
+		751E7F4B1F9CE8420086AA5F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7F19B9466C589569318F04AF /* libPods-GitTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9329B09397BF256EFB5579 /* Pods-GitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitTest/Pods-GitTest.release.xcconfig"; sourceTree = "<group>"; };
 		A4BA7BA2B645A3D8576D709B /* Pods-GitTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitTestUITests/Pods-GitTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		751E7F471F9CE7C70086AA5F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				751E7F481F9CE80A0086AA5F /* GTBaseViewController.h */,
+				751E7F491F9CE80A0086AA5F /* GTBaseViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		B47835841F1387740001D66D = {
 			isa = PBXGroup;
 			children = (
@@ -131,14 +144,7 @@
 		B478358F1F1387740001D66D /* GitTest */ = {
 			isa = PBXGroup;
 			children = (
-				B47835931F1387740001D66D /* AppDelegate.h */,
-				B47835941F1387740001D66D /* AppDelegate.m */,
-				B47835961F1387740001D66D /* ViewController.h */,
-				B47835971F1387740001D66D /* ViewController.m */,
-				B47835991F1387740001D66D /* Main.storyboard */,
-				B478359C1F1387740001D66D /* Assets.xcassets */,
-				B478359E1F1387740001D66D /* LaunchScreen.storyboard */,
-				B47835A11F1387740001D66D /* Info.plist */,
+				751E7F471F9CE7C70086AA5F /* Main */,
 				B47835901F1387740001D66D /* Supporting Files */,
 			);
 			path = GitTest;
@@ -147,7 +153,16 @@
 		B47835901F1387740001D66D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B47835931F1387740001D66D /* AppDelegate.h */,
+				B47835941F1387740001D66D /* AppDelegate.m */,
+				B47835961F1387740001D66D /* ViewController.h */,
+				B47835971F1387740001D66D /* ViewController.m */,
+				B47835991F1387740001D66D /* Main.storyboard */,
+				B478359C1F1387740001D66D /* Assets.xcassets */,
+				B478359E1F1387740001D66D /* LaunchScreen.storyboard */,
+				B47835A11F1387740001D66D /* Info.plist */,
 				B47835911F1387740001D66D /* main.m */,
+				751E7F4B1F9CE8420086AA5F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -462,6 +477,7 @@
 			files = (
 				B47835981F1387740001D66D /* ViewController.m in Sources */,
 				B47835951F1387740001D66D /* AppDelegate.m in Sources */,
+				751E7F4A1F9CE80A0086AA5F /* GTBaseViewController.m in Sources */,
 				B47835921F1387740001D66D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +564,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/GitTest/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -595,6 +613,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/GitTest/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -702,6 +722,7 @@
 				B47835BC1F1387740001D66D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B47835BD1F1387740001D66D /* Build configuration list for PBXNativeTarget "GitTestTests" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +731,7 @@
 				B47835BF1F1387740001D66D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B47835C01F1387740001D66D /* Build configuration list for PBXNativeTarget "GitTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +740,7 @@
 				B47835C21F1387740001D66D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

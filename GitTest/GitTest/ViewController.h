@@ -6,9 +6,9 @@
 //  Copyright © 2017年 geyuze@bytedance.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GTBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : GTBaseViewController
 
 
 @end
