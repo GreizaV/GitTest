@@ -125,10 +125,26 @@
 		751E7F4C1F9CEC330086AA5F /* List */ = {
 			isa = PBXGroup;
 			children = (
+				B40B48B91F9CED3600E32D95 /* View */,
+				B40B48B81F9CED2E00E32D95 /* Model */,
 				751E7F4D1F9CEC530086AA5F /* GTTableViewController.h */,
 				751E7F4E1F9CEC530086AA5F /* GTTableViewController.m */,
 			);
 			name = List;
+			sourceTree = "<group>";
+		};
+		B40B48B81F9CED2E00E32D95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B40B48B91F9CED3600E32D95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		B47835841F1387740001D66D = {
