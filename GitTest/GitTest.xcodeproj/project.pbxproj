@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		751E7F4A1F9CE80A0086AA5F /* GTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E7F491F9CE80A0086AA5F /* GTBaseViewController.m */; };
+		751E7F4F1F9CEC530086AA5F /* GTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E7F4E1F9CEC530086AA5F /* GTTableViewController.m */; };
 		90D9DAE54199286625CE3828 /* libPods-GitTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F19B9466C589569318F04AF /* libPods-GitTestUITests.a */; };
 		B47835921F1387740001D66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835911F1387740001D66D /* main.m */; };
 		B47835951F1387740001D66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835941F1387740001D66D /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		751E7F481F9CE80A0086AA5F /* GTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTBaseViewController.h; sourceTree = "<group>"; };
 		751E7F491F9CE80A0086AA5F /* GTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTBaseViewController.m; sourceTree = "<group>"; };
 		751E7F4B1F9CE8420086AA5F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		751E7F4D1F9CEC530086AA5F /* GTTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTTableViewController.h; sourceTree = "<group>"; };
+		751E7F4E1F9CEC530086AA5F /* GTTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTTableViewController.m; sourceTree = "<group>"; };
 		7F19B9466C589569318F04AF /* libPods-GitTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9329B09397BF256EFB5579 /* Pods-GitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitTest/Pods-GitTest.release.xcconfig"; sourceTree = "<group>"; };
 		A4BA7BA2B645A3D8576D709B /* Pods-GitTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitTestUITests/Pods-GitTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +122,15 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		751E7F4C1F9CEC330086AA5F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				751E7F4D1F9CEC530086AA5F /* GTTableViewController.h */,
+				751E7F4E1F9CEC530086AA5F /* GTTableViewController.m */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
 		B47835841F1387740001D66D = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +156,7 @@
 		B478358F1F1387740001D66D /* GitTest */ = {
 			isa = PBXGroup;
 			children = (
+				751E7F4C1F9CEC330086AA5F /* List */,
 				751E7F471F9CE7C70086AA5F /* Main */,
 				B47835901F1387740001D66D /* Supporting Files */,
 			);
@@ -479,6 +492,7 @@
 				B47835951F1387740001D66D /* AppDelegate.m in Sources */,
 				751E7F4A1F9CE80A0086AA5F /* GTBaseViewController.m in Sources */,
 				B47835921F1387740001D66D /* main.m in Sources */,
+				751E7F4F1F9CEC530086AA5F /* GTTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
