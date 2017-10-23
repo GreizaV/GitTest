@@ -8,6 +8,6 @@
 
 #import "GTBaseViewController.h"
 
-@interface GTTableViewController : GTBaseViewController
+@interface GTTableViewController : GTBaseViewController<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableview;
 @end
