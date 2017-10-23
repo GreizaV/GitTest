@@ -11,4 +11,6 @@
 
 #import <Masonry/Masonry.h>
 
+#import "UIView+Color.h"
+
 #endif /* PrefixHeader_pch */
