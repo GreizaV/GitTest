@@ -8,6 +8,20 @@
 
 #import "GTTableViewModel.h"
 
+@interface GTTableViewModel()
+
+@end
+
+static AFHTTPSessionManager *manager = nil;
+static NSString *host = @"";
+
 @implementation GTTableViewModel
+
+- (Refresh)refresh {
+    return ^GTTableViewModel *(id data, UIViewController<UITableViewDataSource, UITableViewDelegate> *list) {
+        return self;
+    };
+}
+
 
 @end

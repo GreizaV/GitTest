@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GTTableViewModel : NSObject
+@class GTTableViewModel;
 
+typedef GTTableViewModel *(^Refresh)(id data, UIViewController<UITableViewDataSource, UITableViewDelegate> *list);
+
+@interface GTTableViewModel : NSObject
+- (Refresh)refresh;
 @end

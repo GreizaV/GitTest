@@ -7,6 +7,7 @@
 //
 
 #import "GTTableViewController.h"
+#import "GTTableViewModel.h"
 
 @interface GTTableViewController ()
 
@@ -23,6 +24,11 @@
     if (@available(iOS 11.0, *)) {
         self.tableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
 }
 
 - (UITableView *)tableview {

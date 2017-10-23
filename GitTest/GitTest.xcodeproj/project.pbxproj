@@ -12,6 +12,7 @@
 		90D9DAE54199286625CE3828 /* libPods-GitTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F19B9466C589569318F04AF /* libPods-GitTestUITests.a */; };
 		B40B48BC1F9D8E4100E32D95 /* GTTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48BB1F9D8E4100E32D95 /* GTTableViewModel.m */; };
 		B40B48C01F9D90E500E32D95 /* UIView+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48BF1F9D90E500E32D95 /* UIView+Color.m */; };
+		B40B48C31F9D9AF100E32D95 /* GTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48C21F9D9AF100E32D95 /* GTTableViewCell.m */; };
 		B47835921F1387740001D66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835911F1387740001D66D /* main.m */; };
 		B47835951F1387740001D66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835941F1387740001D66D /* AppDelegate.m */; };
 		B47835981F1387740001D66D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835971F1387740001D66D /* ViewController.m */; };
@@ -57,6 +58,8 @@
 		B40B48BB1F9D8E4100E32D95 /* GTTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTTableViewModel.m; sourceTree = "<group>"; };
 		B40B48BE1F9D90E500E32D95 /* UIView+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Color.h"; sourceTree = "<group>"; };
 		B40B48BF1F9D90E500E32D95 /* UIView+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Color.m"; sourceTree = "<group>"; };
+		B40B48C11F9D9AF100E32D95 /* GTTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTTableViewCell.h; sourceTree = "<group>"; };
+		B40B48C21F9D9AF100E32D95 /* GTTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTTableViewCell.m; sourceTree = "<group>"; };
 		B478358D1F1387740001D66D /* GitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47835911F1387740001D66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B47835931F1387740001D66D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 		B40B48B91F9CED3600E32D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B40B48C11F9D9AF100E32D95 /* GTTableViewCell.h */,
+				B40B48C21F9D9AF100E32D95 /* GTTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -524,6 +529,7 @@
 			files = (
 				B40B48BC1F9D8E4100E32D95 /* GTTableViewModel.m in Sources */,
 				B47835981F1387740001D66D /* ViewController.m in Sources */,
+				B40B48C31F9D9AF100E32D95 /* GTTableViewCell.m in Sources */,
 				B47835951F1387740001D66D /* AppDelegate.m in Sources */,
 				751E7F4A1F9CE80A0086AA5F /* GTBaseViewController.m in Sources */,
 				B40B48C01F9D90E500E32D95 /* UIView+Color.m in Sources */,
