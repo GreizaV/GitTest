@@ -7,6 +7,7 @@
 //
 
 #import "GTTableViewModel.h"
+#import "GTBaseViewController.h"
 
 @interface GTTableViewModel()
 
@@ -17,9 +18,31 @@ static NSString *host = @"";
 
 @implementation GTTableViewModel
 
+- (void)dealloc {
+    NSLog(@"GTTableViewModel:%@ dealloced!", self);
+}
+
 - (Refresh)refresh {
-    return ^GTTableViewModel *(id data, UIViewController<UITableViewDataSource, UITableViewDelegate> *list) {
-        return self;
+    return ^GTTableViewController *(GTTableViewController *list, void(^Completion)(id data, NSError *error)) {
+        
+        [manager GET:@""
+          parameters:@{}
+            progress:^(NSProgress * _Nonnull downloadProgress) {
+                
+            }
+             success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                 
+                 if (Completion) {
+                     Completion(responseObject, nil);
+                 }
+             }
+             failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                 if (Completion) {
+                     Completion(nil, error);
+                 }
+             }];
+        
+        return list;
     };
 }
 

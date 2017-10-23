@@ -15,8 +15,15 @@
 
 @implementation GTTableViewController
 
+- (void)dealloc {
+    NSLog(@"GTTableViewController:%@ dealloced!", self);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //test
+    [self.tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:@"identifier"];
     
     self.tableview.tableFooterView = [UIView new];
     self.tableview.backgroundView = [[UIView alloc] initWithFrame:self.tableview.bounds Color:[UIColor lightGrayColor]];
@@ -28,7 +35,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    self.viewModel.refresh(self, ^(id data, NSError *error){
+        
+    });
 }
 
 - (UITableView *)tableview {
@@ -51,12 +60,15 @@
     return _tableview;
 }
 
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier"];
+    return cell;
 }
 
 @end

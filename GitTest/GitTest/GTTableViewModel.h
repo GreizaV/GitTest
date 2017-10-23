@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @class GTTableViewModel;
+@class GTTableViewController;
 
-typedef GTTableViewModel *(^Refresh)(id data, UIViewController<UITableViewDataSource, UITableViewDelegate> *list);
+typedef GTTableViewController *(^Refresh)(GTTableViewController *list, void(^Completion)(id data, NSError *error));
 
 @interface GTTableViewModel : NSObject
 - (Refresh)refresh;
