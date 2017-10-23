@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 
 #import <Masonry/Masonry.h>
+#import <AFNetworking/AFNetworking.h>
 
 #import "UIView+Color.h"
 

@@ -8,6 +8,9 @@
 
 #import "GTBaseViewController.h"
 
+@class GTTableViewModel;
+
 @interface GTTableViewController : GTBaseViewController<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableview;
+@property (nonatomic, strong) GTTableViewModel *viewModel;
 @end
