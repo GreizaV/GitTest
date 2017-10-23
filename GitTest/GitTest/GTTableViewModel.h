@@ -15,4 +15,7 @@ typedef GTTableViewController *(^Refresh)(GTTableViewController *list, void(^Com
 
 @interface GTTableViewModel : NSObject
 - (Refresh)refresh;
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 @end
