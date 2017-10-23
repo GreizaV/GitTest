@@ -1,0 +1,7 @@
+#Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+revision.h
+GitTest/GitTest.xcworkspace/xcuserdata/*
