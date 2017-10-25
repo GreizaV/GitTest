@@ -11,6 +11,7 @@ target 'GitTest' do
   pod 'YYKit'
   pod 'SDWebImage'
   pod 'Masonry'
+  pod 'DOUAudioStreamer'
 
   target 'GitTestTests' do
     inherit! :search_paths

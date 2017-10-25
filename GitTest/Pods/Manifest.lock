@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DOUAudioStreamer (0.2.15)
   - Masonry (1.0.2)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
@@ -24,16 +25,18 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - DOUAudioStreamer
   - Masonry
   - SDWebImage
   - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DOUAudioStreamer: 14f217bab01b52171fc2bd7d96e1f8fdd50fce68
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: fd6be2d099d23d393a9fc76b5f54c16bcdc3ce58
+PODFILE CHECKSUM: d6d9f6a0ed91f1091b3d29f85aa3aa7f3abcca53
 
 COCOAPODS: 1.2.1

@@ -11,7 +11,14 @@
 
 #import <Masonry/Masonry.h>
 #import <AFNetworking/AFNetworking.h>
+#import <YYKit/YYKit.h>
 
 #import "UIView+Color.h"
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define LogMethodRaw NSLog(@"%@-->%s",self.class, __FUNCTION__);
+#define LogMethod(class) NSLog(@"%@-->%s",class, __FUNCTION__)
 
 #endif /* PrefixHeader_pch */

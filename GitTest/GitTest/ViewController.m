@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "GTViewTraverser.h"
+#import "GTUITestViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+//    self.view.backgroundColor = [UIColor colorWithRed:200/255.0 green:200/255.0 blue:200/255.0 alpha:1.0f];
+    
+//    [GTViewTraverser preorderTraverse:self.navigationController.navigationBar];
+//    NSLog(@"---");
+//    [GTViewTraverser postorderTraverse:self.navigationController.navigationBar];
+    
+//    NSArray<UIViewController *> *ctrls = @[[UIViewController new],
+//                                           [UIViewController new],
+//                                           [UIViewController new],
+//                                           [UIViewController new]];
+//
+//    UITabBarController *tabbarCtrl = [[UITabBarController alloc] init];
+//    [tabbarCtrl setViewControllers:ctrls animated:NO];
+//
+//    [GTViewTraverser preorderTraverse:tabbarCtrl.view];
+    
+//    UIView *view = [UIView new];
+//    [self.view addSubview:view];
+//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.view);
+//    }];
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    GTUITestViewController *gtctrl = [GTUITestViewController new];
+    [self.navigationController pushViewController:gtctrl animated:YES];
 }
 
 
