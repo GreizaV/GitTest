@@ -25,7 +25,7 @@
 }
 
 - (void)playLoaclWithURL:(NSURL *)url {
-    self.localPlayer = [AVAudioPlayer alloc] init;
+//    self.localPlayer = [AVAudioPlayer alloc] init;
 }
 
 - (void)playRemoteWithURL:(NSURL *)url {

@@ -10,12 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 #import <AudioToolbox/AudioToolbox.h>
-#import <AudioUnit/AudioUnit.h>
 
 @implementation GTSongModel
-- (void)set {
-    AVPlayer *avPlayer = [[AVPlayer alloc] initWithURL:nil];
-    
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:nil error:nil];
-}
+
 @end

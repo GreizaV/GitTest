@@ -22,10 +22,11 @@
 		B40B48E81FA03ECD00E32D95 /* GTTabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48E71FA03ECD00E32D95 /* GTTabManager.m */; };
 		B40B48EC1FA08C4900E32D95 /* GTSongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48EB1FA08C4900E32D95 /* GTSongModel.m */; };
 		B40B48F11FA08CAE00E32D95 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40B48ED1FA08CAB00E32D95 /* AudioToolbox.framework */; };
-		B40B48F21FA08CAE00E32D95 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40B48EE1FA08CAD00E32D95 /* AudioUnit.framework */; };
 		B40B48F31FA08CAE00E32D95 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40B48EF1FA08CAD00E32D95 /* AVKit.framework */; };
 		B40B48F41FA08CAE00E32D95 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40B48F01FA08CAE00E32D95 /* AVFoundation.framework */; };
 		B40B48F71FA0960A00E32D95 /* GTSongPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48F61FA0960A00E32D95 /* GTSongPlayer.m */; };
+		B40B48FB1FA0B44000E32D95 /* GTPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48FA1FA0B44000E32D95 /* GTPlayController.m */; };
+		B40B48FF1FA1D0A800E32D95 /* GTArchiveTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B48FE1FA1D0A800E32D95 /* GTArchiveTestController.m */; };
 		B47835921F1387740001D66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835911F1387740001D66D /* main.m */; };
 		B47835951F1387740001D66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835941F1387740001D66D /* AppDelegate.m */; };
 		B47835981F1387740001D66D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47835971F1387740001D66D /* ViewController.m */; };
@@ -95,6 +96,10 @@
 		B40B48F01FA08CAE00E32D95 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B40B48F51FA0960A00E32D95 /* GTSongPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSongPlayer.h; sourceTree = "<group>"; };
 		B40B48F61FA0960A00E32D95 /* GTSongPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSongPlayer.m; sourceTree = "<group>"; };
+		B40B48F91FA0B44000E32D95 /* GTPlayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTPlayController.h; sourceTree = "<group>"; };
+		B40B48FA1FA0B44000E32D95 /* GTPlayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTPlayController.m; sourceTree = "<group>"; };
+		B40B48FD1FA1D0A800E32D95 /* GTArchiveTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTArchiveTestController.h; sourceTree = "<group>"; };
+		B40B48FE1FA1D0A800E32D95 /* GTArchiveTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTArchiveTestController.m; sourceTree = "<group>"; };
 		B478358D1F1387740001D66D /* GitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47835911F1387740001D66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B47835931F1387740001D66D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B40B48F11FA08CAE00E32D95 /* AudioToolbox.framework in Frameworks */,
-				B40B48F21FA08CAE00E32D95 /* AudioUnit.framework in Frameworks */,
 				B40B48F31FA08CAE00E32D95 /* AVKit.framework in Frameworks */,
 				B40B48F41FA08CAE00E32D95 /* AVFoundation.framework in Frameworks */,
 				DD2C50468C9DA6C24C048E19 /* libPods-GitTest.a in Frameworks */,
@@ -263,12 +267,33 @@
 		B40B48E91FA08A0400E32D95 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				B40B48F81FA0B40B00E32D95 /* Page */,
 				B40B48EA1FA08C4900E32D95 /* GTSongModel.h */,
 				B40B48EB1FA08C4900E32D95 /* GTSongModel.m */,
 				B40B48F51FA0960A00E32D95 /* GTSongPlayer.h */,
 				B40B48F61FA0960A00E32D95 /* GTSongPlayer.m */,
 			);
 			name = Music;
+			sourceTree = "<group>";
+		};
+		B40B48F81FA0B40B00E32D95 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				B40B48F91FA0B44000E32D95 /* GTPlayController.h */,
+				B40B48FA1FA0B44000E32D95 /* GTPlayController.m */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
+		B40B48FC1FA1D08500E32D95 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B40B48D61FA0347600E32D95 /* GTUITestViewController.h */,
+				B40B48D71FA0347600E32D95 /* GTUITestViewController.m */,
+				B40B48FD1FA1D0A800E32D95 /* GTArchiveTestController.h */,
+				B40B48FE1FA1D0A800E32D95 /* GTArchiveTestController.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		B47835841F1387740001D66D = {
@@ -308,6 +333,7 @@
 		B47835901F1387740001D66D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B40B48FC1FA1D08500E32D95 /* Tests */,
 				B47835931F1387740001D66D /* AppDelegate.h */,
 				B47835941F1387740001D66D /* AppDelegate.m */,
 				B47835961F1387740001D66D /* ViewController.h */,
@@ -318,8 +344,6 @@
 				B47835A11F1387740001D66D /* Info.plist */,
 				B47835911F1387740001D66D /* main.m */,
 				751E7F4B1F9CE8420086AA5F /* PrefixHeader.pch */,
-				B40B48D61FA0347600E32D95 /* GTUITestViewController.h */,
-				B40B48D71FA0347600E32D95 /* GTUITestViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -644,10 +668,12 @@
 				B40B48C31F9D9AF100E32D95 /* GTTableViewCell.m in Sources */,
 				B40B48F71FA0960A00E32D95 /* GTSongPlayer.m in Sources */,
 				B47835951F1387740001D66D /* AppDelegate.m in Sources */,
+				B40B48FF1FA1D0A800E32D95 /* GTArchiveTestController.m in Sources */,
 				751E7F4A1F9CE80A0086AA5F /* GTBaseViewController.m in Sources */,
 				B40B48D81FA0347600E32D95 /* GTUITestViewController.m in Sources */,
 				B40B48E81FA03ECD00E32D95 /* GTTabManager.m in Sources */,
 				B40B48C01F9D90E500E32D95 /* UIView+Color.m in Sources */,
+				B40B48FB1FA0B44000E32D95 /* GTPlayController.m in Sources */,
 				B40B48EC1FA08C4900E32D95 /* GTSongModel.m in Sources */,
 				B40B48D11FA0312600E32D95 /* GTHorizontalTabView.m in Sources */,
 				B47835921F1387740001D66D /* main.m in Sources */,
